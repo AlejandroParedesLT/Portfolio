@@ -1,0 +1,29 @@
+{
+  "root": true,
+  "project": {
+    "name": "Alejandro_Paredes_La_Torre_Portfolio"
+  },
+  "api": {
+    "projectId": "ry3a8mun",
+    "dataset": "production"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "@sanity/vision"
+      ]
+    }
+  },
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema"
+    }
+  ]
+}
